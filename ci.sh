@@ -8,5 +8,4 @@ sudo apt-get update
 sudo apt-get -y install ruby
 ruby -v
 gem install bundler
-bundle
 echo "Done!"
