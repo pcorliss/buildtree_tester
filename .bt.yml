@@ -1,0 +1,10 @@
+docker_image: "ubuntu:15.10"
+env:
+  FOO: foo
+  BAR: bar
+packages:
+- ruby
+dependencies:
+- gem install bundler
+test:
+- echo "Tests!"
