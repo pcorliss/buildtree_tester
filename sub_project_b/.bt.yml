@@ -1,0 +1,6 @@
+docker_image: "ubuntu:15.10"
+env:
+  FOO: foo
+  BAR: bar
+test:
+- echo "Tests!"
