@@ -9,10 +9,10 @@ dependencies:
 test:
 - echo "Tests!"
 build_in_parallel:
-#- sub_project: 'sub_project_a/.bt.yml'
-  #env:
-    #PARENT_FOO: $FOO
-    #PARENT_BAR: 'simple'
+- sub_project: 'sub_project_a/.bt.yml'
+  env:
+    PARENT_FOO: $FOO
+    PARENT_BAR: 'simple'
 - service: github
   organization: pcorliss
   name: buildtree_tester_2
@@ -21,10 +21,10 @@ build_in_parallel:
     PARENT_FOO: $FOO
     PARENT_BAR: 'simple'
 build_on_success:
-#- sub_project: 'sub_project_b/.bt.yml'
-  #env:
-    #PARENT_FOO: $FOO
-    #PARENT_BAR: 'simple'
+- sub_project: 'sub_project_b/.bt.yml'
+  env:
+    PARENT_FOO: $FOO
+    PARENT_BAR: 'simple'
 - service: github
   organization: pcorliss
   name: buildtree_tester_2
