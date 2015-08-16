@@ -3,4 +3,4 @@ env:
   FOO: foo
   BAR: bar
 test:
-- echo "Tests!"
+- echo "A Tests!"
